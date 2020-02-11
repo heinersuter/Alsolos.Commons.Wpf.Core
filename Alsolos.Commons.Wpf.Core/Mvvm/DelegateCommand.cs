@@ -10,12 +10,7 @@ namespace Alsolos.Commons.Wpf.Core.Mvvm
         private readonly Func<bool> _canExecute;
         private readonly Action _executeAction;
 
-        public DelegateCommand(Action execute)
-            : this(execute, null)
-        {
-        }
-
-        public DelegateCommand(Action execute, Func<bool> canExecute)
+        public DelegateCommand(Action execute, Func<bool> canExecute = null)
         {
             _executeAction = execute;
             _canExecute = canExecute;
@@ -42,9 +37,9 @@ namespace Alsolos.Commons.Wpf.Core.Mvvm
             _executeAction.Invoke();
         }
 
-        public void RaiseCanExecuteChanged()
+        public static void RaiseCanExecuteChanged()
         {
-            Application.Current.Dispatcher.Invoke(DispatcherPriority.DataBind, new Action(CommandManager.InvalidateRequerySuggested));
+            Application.Current.Dispatcher?.Invoke(DispatcherPriority.DataBind, new Action(CommandManager.InvalidateRequerySuggested));
         }
     }
 }

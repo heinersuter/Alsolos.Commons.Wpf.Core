@@ -25,7 +25,7 @@ namespace Alsolos.Commons.Wpf.Core.Mvvm.Converters
                 return null;
             }
 
-            return stringValue.Replace(Environment.NewLine, NewLineReplacement);
+            return stringValue.Replace(Environment.NewLine, NewLineReplacement, StringComparison.Ordinal);
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

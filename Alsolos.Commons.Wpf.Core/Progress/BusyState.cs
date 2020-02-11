@@ -3,7 +3,7 @@ using Alsolos.Commons.Wpf.Core.Mvvm;
 
 namespace Alsolos.Commons.Wpf.Core.Progress
 {
-    public class BusyState : BackingFieldsHolder, IDisposable
+    public sealed class BusyState : BackingFieldsHolder, IDisposable
     {
         private Action _callback;
 

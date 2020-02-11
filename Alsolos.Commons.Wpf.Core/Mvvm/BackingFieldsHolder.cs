@@ -36,7 +36,7 @@ namespace Alsolos.Commons.Wpf.Core.Mvvm
             return BackingFields.GetValue<T>(propertyName, null);
         }
 
-        protected string GetPropertyName<T>(Expression<Func<T>> propertyExpression)
+        protected static string GetPropertyName<T>(Expression<Func<T>> propertyExpression)
         {
             return PropertyHelper.GetName(propertyExpression);
         }

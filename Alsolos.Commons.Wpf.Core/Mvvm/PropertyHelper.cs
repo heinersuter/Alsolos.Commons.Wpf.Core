@@ -15,12 +15,12 @@ namespace Alsolos.Commons.Wpf.Core.Mvvm
 
             if (!(propertyExpression.Body is MemberExpression memberExpression))
             {
-                throw new ArgumentException(@"The expression is not a member access expression.", nameof(propertyExpression));
+                throw new ArgumentException("The expression is not a member access expression.", nameof(propertyExpression));
             }
 
             if (!(memberExpression.Member is PropertyInfo))
             {
-                throw new ArgumentException(@"The member access expression does not access a property.", nameof(propertyExpression));
+                throw new ArgumentException("The member access expression does not access a property.", nameof(propertyExpression));
             }
 
             return memberExpression.Member.Name;
