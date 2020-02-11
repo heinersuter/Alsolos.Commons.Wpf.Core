@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alsolos.Commons.Wpf.Core", "Alsolos.Commons.Wpf.Core\Alsolos.Commons.Wpf.Core.csproj", "{B8F8EBBF-9DE9-4FDC-8DD7-DFB1CCA7DE72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8F8EBBF-9DE9-4FDC-8DD7-DFB1CCA7DE72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F8EBBF-9DE9-4FDC-8DD7-DFB1CCA7DE72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F8EBBF-9DE9-4FDC-8DD7-DFB1CCA7DE72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F8EBBF-9DE9-4FDC-8DD7-DFB1CCA7DE72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {879DF3F0-9979-4F5F-A51B-23E2A61E47B7}
+	EndGlobalSection
+EndGlobal
