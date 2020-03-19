@@ -3,6 +3,11 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Heiner Suter</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <PackageTags>MVVM WPF</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
